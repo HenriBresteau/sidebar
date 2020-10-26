@@ -27,7 +27,7 @@ p{
     background-color: #09FBBA;
     left: -300px;
     transition: .5s ease-in-out;
-    z-index: -4;
+    z-index: 4;
 }
 .toggle-button{
     position: absolute;
@@ -56,5 +56,27 @@ li {
 li:hover {
     background: #292929;
     color: #FCFCFB;
+}
+#side-bar.active {
+    left: 0;
+}
+#side-bar.active .toggle-button{
+    top: 2.8rem;
+    left: 235px;
+}
+#side-bar.active span {
+    position: absolute;
+}
+#side-bar.active span:nth-child(1) {
+    transform: rotate(45deg);
+}
+#side-bar.active span:nth-child(2) {
+    opacity: 0;
+}
+#side-bar.active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+#side-bar.active ~ .content{
+    opacity: 0.3;
 }
 /*# sourceMappingURL=style.css.map */
