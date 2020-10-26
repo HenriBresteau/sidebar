@@ -20,4 +20,41 @@ h1{
 p{
     padding: 2rem 5rem;
 }
+#side-bar {
+    position: absolute;
+    width: 230px;
+    height: 100%;
+    background-color: #09FBBA;
+    left: -300px;
+    transition: .5s ease-in-out;
+    z-index: -4;
+}
+.toggle-button{
+    position: absolute;
+    top:30px;
+    left: 310px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+.toggle-button span{
+    width: 60px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #09FBBA;
+    margin-top: 4px;
+    display: block;
+    transition: 0.5s ease;
+}
+li {
+    color: #292929;
+    list-style-type: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-left: 5px;
+}
+li:hover {
+    background: #292929;
+    color: #FCFCFB;
+}
 /*# sourceMappingURL=style.css.map */
